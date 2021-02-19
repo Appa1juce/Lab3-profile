@@ -1,0 +1,37 @@
+<main class="main">
+  <div class="form-container">
+    <form
+      #editform="ngForm"
+      (ngSubmit)="formSubmission(editform)"
+      class="edit-form"
+    >
+      <p>Use the form below to update your profile</p>
+      <label for="name" class="text-label">Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        [ngModel]="user.name"
+        class="text-input"
+      />
+      <label for="contact" class="text-label">Contact</label>
+      <input
+        type="text"
+        name="contact"
+        id="contact"
+        [ngModel]="user.contact"
+        class="text-input"
+      />
+      <label for="bio" class="text-label">Bio</label>
+      <textarea
+        name="bio"
+        id="bio"
+        cols="30"
+        rows="10"
+        [ngModel]="user.bio"
+        class="text-input"
+      ></textarea>
+      <button class="submit-button">Update</button>
+    </form>
+  </div>
+</main>

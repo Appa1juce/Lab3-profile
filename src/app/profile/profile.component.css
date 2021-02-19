@@ -1,0 +1,46 @@
+.main {
+  display: flex;
+  justify-content: center;
+
+  position: relative;
+}
+
+.section-container {
+  display: flex;
+  border-radius: 15px;
+  flex-direction: column;
+  position: absolute;
+  border: 1px solid black;
+  height: 400px;
+  width: 400px;
+}
+
+.upper-card {
+  border-radius: 15px;
+  flex: 1;
+  background-color: #1ecefd;
+}
+
+.profile-info {
+  margin: 10px;
+  display: flex;
+  /* align-items: center; */
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.profile-contact {
+  color: rgb(177, 173, 173);
+  margin: 0;
+}
+
+.edit-button {
+  display: flex;
+  /* width: 350px; */
+  height: 35px;
+  border-radius: 15px;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  background-color: #505355;
+}
